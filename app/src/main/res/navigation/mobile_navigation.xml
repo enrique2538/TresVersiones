@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_marcador">
+
+    <fragment
+        android:id="@+id/nav_marcador"
+        android:name="com.example.tresversiones.ui.marcador.MarcadorFragment"
+        android:label="@string/menu_marcador"
+        tools:layout="@layout/fragmento_marcador" />
+
+    <fragment
+        android:id="@+id/nav_ruta"
+        android:name="com.example.tresversiones.ui.ruta.RutaFragment"
+        android:label="@string/menu_ruta"
+        tools:layout="@layout/fragmento_ruta" />
+
+    <fragment
+        android:id="@+id/nav_rutagps"
+        android:name="com.example.tresversiones.ui.rutagps.RutagpsFragment"
+        android:label="@string/menu_rutagps"
+        tools:layout="@layout/fragmento_rutagps" />
+</navigation>
